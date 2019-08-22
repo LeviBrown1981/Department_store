@@ -1,0 +1,11 @@
+<h1>Click a Store to view content</h1>
+<%= link_to "Create a new store", new_store_path%>
+
+<h3><%= @stores.lenght === 0 ? "No Stores Added" : ""%></h3>
+
+<ul>
+<% @stores.each do |store|%>
+  <li><%= link_to store.name, store_path(store) %%></li>
+  
+  <% end %>
+  </ul>

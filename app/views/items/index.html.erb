@@ -1,0 +1,7 @@
+<h1>Click an Item Baller!</h1>
+<%= link_to 'Create a new item', new_store_idea_path(@store) %>
+<ul>
+  <% @items.each do |item| %>
+    <li><%= link_to topic.name, [@store, topic] %></li>
+  <% end %>
+</ul>
